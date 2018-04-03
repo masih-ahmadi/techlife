@@ -51,12 +51,12 @@
     },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "ionstore.ionicpremium.tabs"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "ionstore.ionicpremium.tabs"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "ionstore.ionicpremium.tabs"
-    },
     "card.io.cordova.mobilesdk": {
       "PACKAGE_NAME": "ionstore.ionicpremium.tabs"
     },
