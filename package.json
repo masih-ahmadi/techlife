@@ -45,6 +45,7 @@
     "cordova-plugin-email-composer": "^0.8.10",
     "cordova-plugin-globalization": "^1.0.7",
     "cordova-plugin-inappbrowser": "^1.7.1",
+    "cordova-plugin-ionic": "^4.1.3",
     "cordova-plugin-ionic-webview": "^1.1.15",
     "cordova-plugin-splashscreen": "^4.0.3",
     "cordova-plugin-statusbar": "git+https://github.com/apache/cordova-plugin-statusbar.git",
@@ -84,7 +85,12 @@
       "cordova-plugin-apprate": {},
       "cordova-plugin-app-version": {},
       "onesignal-cordova-plugin": {},
-      "cordova-plugin-statusbar": {}
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-ionic": {
+        "APP_ID": "3dbdd5ef",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "background"
+      }
     },
     "platforms": [
       "ios",
