@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "4.4.4",
     "@ionic-native/app-rate": "^4.6.0",
     "@ionic-native/app-version": "^4.3.2",
-    "@ionic-native/core": "^3.14.0",
+    "@ionic-native/core": "^4.2.0",
     "@ionic-native/email-composer": "^4.6.0",
     "@ionic-native/onesignal": "^4.6.0",
     "@ionic-native/paypal": "^4.6.0",
