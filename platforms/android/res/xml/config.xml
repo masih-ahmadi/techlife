@@ -48,6 +48,10 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="IonicCordovaCommon">
         <param name="android-package" onload="true" value="com.ionicframework.common.IonicCordovaCommon" />
     </feature>

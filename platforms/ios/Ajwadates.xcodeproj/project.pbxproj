@@ -115,6 +115,7 @@
 		D74BD1DEA44E493EA1ADF4E5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE42FA5C03C4096B1C25AAE /* StoreKit.framework */; };
 		C9748A61222149B49D465E4A /* AppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A02C20CBB34FAAA5967FC6 /* AppVersion.m */; };
 		7EFE6A8BF1EE450DB1B1EFD5 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C1191F83343BB9291BD3E /* CDVDevice.m */; };
+		F0C559BCAFB943B7BA268ACB /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CC91A90FA546129BD01C66 /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -342,6 +343,8 @@
 		EAB2C209465B4B99931E35EB /* AppVersion.h */ = {isa = PBXFileReference; name = "AppVersion.h"; path = "cordova-plugin-app-version/AppVersion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		E62C1191F83343BB9291BD3E /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		E9635C4A437E424B8CEADFF3 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		94CC91A90FA546129BD01C66 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		14B3B5BB50C041B18465DC81 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -658,6 +661,8 @@
 				EAB2C209465B4B99931E35EB /* AppVersion.h */,
 				E62C1191F83343BB9291BD3E /* CDVDevice.m */,
 				E9635C4A437E424B8CEADFF3 /* CDVDevice.h */,
+				94CC91A90FA546129BD01C66 /* CDVStatusBar.m */,
+				14B3B5BB50C041B18465DC81 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = "Ajwadates/Plugins";
@@ -843,6 +848,7 @@
 				279361FB3D7C461F80F2CAF0 /* CDVAppRate.m in Sources */,
 				C9748A61222149B49D465E4A /* AppVersion.m in Sources */,
 				7EFE6A8BF1EE450DB1B1EFD5 /* CDVDevice.m in Sources */,
+				F0C559BCAFB943B7BA268ACB /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

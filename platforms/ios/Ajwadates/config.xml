@@ -72,6 +72,10 @@
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Ajwadates</name>
     <description>An awesome WooCommerce app</description>
     <author email="info@ionicpremium.com" href="http://ionicpremium.com/">Ionic Premium Team</author>
@@ -132,6 +136,8 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
