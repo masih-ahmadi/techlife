@@ -23,6 +23,7 @@ export class HomePage {
 
 		this.woo.getAllCategories().then( (tmp) => {
 			this.categories = tmp;
+
 			this.woo.loadSetting().then( x=> {
 				if(x.currency){
 					this.app = x;

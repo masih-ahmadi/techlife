@@ -8,14 +8,14 @@ webpackJsonp([27],{
 var App = {
     store: 'Ajwadates',
     ContactEmail: 'mahmadi@techlife.af',
-    url: 'http://localhost:8080/ionic/',
+    url: 'http://www.ajwadates.sa/',
     OneSignalAppID: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
     GCM: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    consumerKey: 'ck_90e0e20b2f33d08ac2e5d6dff165f03a9dc92cf0',
-    consumerSecret: 'cs_fc22179539881496dcee2bcaa9679786e214dea3',
-    paypalSandboxClientID: 'AZjyISbp1zmOhZ0o_iAG3W2IGjlz2hvEC-8cGoQ7fXcMFN9afaRuW0X1B1PVSgkSuTQWOKqM9N4NTkOP',
+    consumerKey: 'ck_a8d14908222879c9f1719db548727b54265d78a2',
+    consumerSecret: 'cs_ce2da9d7a4d3b47d93ed2d18ff0b3828cde1ff42',
+    paypalSandboxClientID: '',
     paypalLiveClientID: '',
-    paypalState: 'PayPalEnvironmentSandbox',
+    paypalState: '',
     languages: [
         { id: 'en', title: 'English' },
         { id: 'ar', title: 'Arabic' },
@@ -191,79 +191,79 @@ var map = {
 		20
 	],
 	"../pages/account/saved-address/saved-address.module": [
-		906,
+		920,
 		19
 	],
 	"../pages/account/settings/languages/languages.module": [
-		907,
+		906,
 		18
 	],
 	"../pages/account/settings/notifications/notifications.module": [
-		908,
+		916,
 		17
 	],
 	"../pages/account/settings/settings.module": [
-		909,
+		908,
 		16
 	],
 	"../pages/account/settings/tos/tos.module": [
-		910,
+		907,
 		15
 	],
 	"../pages/cart/cart.module": [
-		911,
+		909,
 		14
 	],
 	"../pages/categories/categories.module": [
-		912,
+		911,
 		13
 	],
 	"../pages/checkout/checkout.module": [
-		913,
+		910,
 		12
 	],
 	"../pages/home/home.module": [
-		914,
+		917,
 		11
 	],
 	"../pages/login/login.module": [
-		915,
+		912,
 		10
 	],
 	"../pages/orders/detail/detail.module": [
-		916,
+		914,
 		9
 	],
 	"../pages/orders/orders.module": [
-		917,
+		913,
 		8
 	],
 	"../pages/product/grid/grid.module": [
-		918,
+		915,
 		7
 	],
 	"../pages/product/mini-cart/mini-cart.module": [
-		919,
+		923,
 		6
 	],
 	"../pages/product/modal-categories/modal-categories.module": [
-		920,
+		918,
 		5
 	],
 	"../pages/product/product.module": [
-		921,
+		924,
 		4
 	],
 	"../pages/search/search.module": [
-		922,
+		919,
 		3
 	],
 	"../pages/tabs/tabs.module": [
-		923,
+		922,
 		2
 	],
 	"../pages/thanks/thanks.module": [
-		924,
+		921,
 		1
 	],
 	"../pages/wishlist/wishlist.module": [
@@ -399,25 +399,25 @@ AppModule = __decorate([
                     { loadChildren: '../pages/account/notification/notification.module#AccountNotificationPageModule', name: 'AccountNotificationPage', segment: 'notification', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/profile/profile.module#AccountProfilePageModule', name: 'AccountProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/saved-address/add-address/add-address.module#AddAddressPageModule', name: 'AddAddressPage', segment: 'add-address', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/saved-address/saved-address.module#SavedAddressPageModule', name: 'SavedAddressPage', segment: 'saved-address', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/settings/languages/languages.module#AccountSettingsLanguagesPageModule', name: 'AccountSettingsLanguagesPage', segment: 'languages', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/settings/notifications/notifications.module#AccountSettingsNotificationsPageModule', name: 'AccountSettingsNotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/settings/settings.module#AccountSettingsPageModule', name: 'AccountSettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/settings/tos/tos.module#AccountSettingsTosPageModule', name: 'AccountSettingsTosPage', segment: 'tos', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/settings/settings.module#AccountSettingsPageModule', name: 'AccountSettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/categories/categories.module#CategoriesPageModule', name: 'CategoriesPage', segment: 'categories', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/checkout/checkout.module#CheckoutPageModule', name: 'CheckoutPage', segment: 'checkout', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/categories/categories.module#CategoriesPageModule', name: 'CategoriesPage', segment: 'categories', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/orders/detail/detail.module#OrderDetailPageModule', name: 'OrderDetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/orders/orders.module#OrdersPageModule', name: 'OrdersPage', segment: 'orders', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/orders/detail/detail.module#OrderDetailPageModule', name: 'OrderDetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/product/grid/grid.module#ProductGridPageModule', name: 'ProductGridPage', segment: 'grid', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/product/mini-cart/mini-cart.module#MiniCartPageModule', name: 'MiniCartPage', segment: 'mini-cart', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/settings/notifications/notifications.module#AccountSettingsNotificationsPageModule', name: 'AccountSettingsNotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/product/modal-categories/modal-categories.module#ModalCategoriesPageModule', name: 'ModalCategoriesPage', segment: 'modal-categories', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/product/product.module#ProductPageModule', name: 'ProductPage', segment: 'product', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/saved-address/saved-address.module#SavedAddressPageModule', name: 'SavedAddressPage', segment: 'saved-address', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/thanks/thanks.module#ThanksPageModule', name: 'ThanksPage', segment: 'thanks', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/product/mini-cart/mini-cart.module#MiniCartPageModule', name: 'MiniCartPage', segment: 'mini-cart', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/product/product.module#ProductPageModule', name: 'ProductPage', segment: 'product', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/wishlist/wishlist.module#WishlistPageModule', name: 'WishlistPage', segment: 'wishlist', priority: 'low', defaultHistory: [] }
                 ]
             })

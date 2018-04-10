@@ -7,9 +7,9 @@ export const App: any = {
   consumerKey     : 'ck_a8d14908222879c9f1719db548727b54265d78a2', // change this with your Consumer Key from WooCommerce
   consumerSecret  : 'cs_ce2da9d7a4d3b47d93ed2d18ff0b3828cde1ff42', // change this with your Consumer Secret from WooCommerce
 
-  paypalSandboxClientID: 'AZjyISbp1zmOhZ0o_iAG3W2IGjlz2hvEC-8cGoQ7fXcMFN9afaRuW0X1B1PVSgkSuTQWOKqM9N4NTkOP',
+  paypalSandboxClientID: '',
   paypalLiveClientID: '', // get this from paypal developer dashboard
-  paypalState: 'PayPalEnvironmentSandbox', // change this to 'PayPalEnvironmentProduction' if you wanna live
+  paypalState: '', // change this to 'PayPalEnvironmentProduction' if you wanna live
 
   languages: [
     {id: 'en', title: 'English'},

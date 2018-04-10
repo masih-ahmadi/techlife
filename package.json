@@ -5,7 +5,11 @@
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
-    
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
     "@angular/common": "4.4.4",
@@ -48,7 +52,7 @@
     "cordova-plugin-x-socialsharing": "^5.2.1",
     "es6-promise-plugin": "^4.1.0",
     "font-awesome": "4.7.0",
-    "ionic-angular": "^3.8.0",
+    "ionic-angular": "^3.9.2",
     "ionic-img-viewer": "^2.7.3",
     "ionic-plugin-keyboard": "^2.2.1",
     "ionicons": "3.0.0",
@@ -57,11 +61,11 @@
     "rxjs": "^5.4.3",
     "sw-toolbox": "3.6.0",
     "woocommerce-api": "^1.4.2",
-    "zone.js": "^0.8.17"
+    "zone.js": "^0.8.25"
   },
   "devDependencies": {
     "@ionic/app-scripts": "^3.0.1",
-    "ionic": "3.13.2",
+    "ionic": "3.20.0",
     "typescript": "2.3.4"
   },
   "description": "An Ionic project",
