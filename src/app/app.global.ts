@@ -1,6 +1,6 @@
 export const App: any = {
-  store           : 'Ajwadates',  // change this with your app name
-  ContactEmail    : 'mahmadi@techlife.af', // change this with your email contact
+  store           : 'TechLife',  // change this with your app name
+  ContactEmail    : 'info@ajwadates.sa', // change this with your email contact
   url             : 'http://www.ajwadates.sa/', // change this with your URL (please use https, recommended)
   OneSignalAppID  : 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', // change this with your onesignal api key
   GCM             : 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', // Google Project Number for Google Cloud Messaging
@@ -12,13 +12,13 @@ export const App: any = {
   paypalState: '', // change this to 'PayPalEnvironmentProduction' if you wanna live
 
   languages: [
+    {id: 'ar', title: 'العربية'},
     {id: 'en', title: 'English'},
-    {id: 'ar', title: 'Arabic'},
     // {id: 'id', title: 'Indonesian'},
     // {id: 'fr', title: 'French'},
     // {id: 'in', title: 'Hindi'},
     // {id: 'cn', title: 'Chinese'}
   ],
 
-  defaultLang: 'en'
+  defaultLang: 'ar'
 };

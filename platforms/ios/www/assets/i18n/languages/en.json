@@ -157,5 +157,15 @@
     "ONLY_DEVICE_DESC": "This feature only works on your real device or emulator.",
 
     "EMPTY_NOTIF": "No notifs",
-    "NOTIF": "Notifications"
+    "NOTIF": "Notifications",
+    "TOTAL": "Total",
+    "ITEM": "Item",
+           "CATEGORY": "Category",
+          "TOTALSALE": "Total Sale",
+           "STOCK": "Stock",
+            "WEIGHT": "Weight",
+             "BANK": "BANK",
+            "ACCOUNTNUMBER": "ACCOUNT NUMBER",
+            "IBAN": "IBAN",
+             "BANKDETAIL": "BANK DETAILS"
 }

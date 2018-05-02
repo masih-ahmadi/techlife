@@ -24,13 +24,14 @@ export class AccountProfilePage {
   }
 
   submit(){
-    this.loader.present();
+    // this.loader.present();
     this._user.update(this.form.value).map(x => x.json()).subscribe( x => {
+      alert(JSON.stringify(x));
       this._user.setUserUpdate(this.form.value);
       this.translate.get(['PROFILE_UPDATED']).subscribe( x=> {
         this.toast.show(x.PROFILE_UPDATED);
       });
-      this.loader.dismiss();
+      // this.loader.dismiss();
       this.dismiss();
     })
   }

@@ -92,9 +92,9 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "onesignal-cordova-plugin/tabs-build-extras-onesignal.gradle"
 apply from: "card.io.cordova.mobilesdk/tabs-build.gradle"
 apply from: "com.paypal.cordova.mobilesdk/tabs-build.gradle"
+apply from: "onesignal-cordova-plugin/tabs-build-extras-onesignal.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -257,8 +257,8 @@ dependencies {
     debugCompile(project(path: "CordovaLib", configuration: "debug"))
     releaseCompile(project(path: "CordovaLib", configuration: "release"))
     compile "com.android.support:support-v4:24.1.1+"
-    compile "com.onesignal:OneSignal:3.8.3"
     compile "com.stripe:stripe-android:4.1.2"
+    compile "com.onesignal:OneSignal:3.8.3"
     // SUB-PROJECT DEPENDENCIES END
 }
 

@@ -1,6 +1,6 @@
 webpackJsonp([21],{
 
-/***/ 903:
+/***/ 904:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_shared_module__ = __webpack_require__(526);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile__ = __webpack_require__(930);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile__ = __webpack_require__(931);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ AccountProfilePageModule = __decorate([
 
 /***/ }),
 
-/***/ 930:
+/***/ 931:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84,13 +84,14 @@ var AccountProfilePage = (function () {
     }
     AccountProfilePage.prototype.submit = function () {
         var _this = this;
-        this.loader.present();
+        // this.loader.present();
         this._user.update(this.form.value).map(function (x) { return x.json(); }).subscribe(function (x) {
+            alert(JSON.stringify(x));
             _this._user.setUserUpdate(_this.form.value);
             _this.translate.get(['PROFILE_UPDATED']).subscribe(function (x) {
                 _this.toast.show(x.PROFILE_UPDATED);
             });
-            _this.loader.dismiss();
+            // this.loader.dismiss();
             _this.dismiss();
         });
     };

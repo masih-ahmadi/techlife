@@ -116,11 +116,11 @@ var AddAddressPage = (function () {
                 if (val) {
                     if (val.value.length == 0) {
                         for (var i in val.options)
-                            _this.countries.push({ id: i, name: val.options[i] });
+                            _this.countries.push({ id: val.options[i], name: val.options[i] });
                     }
                     else {
                         for (var i in val.value)
-                            _this.countries.push({ id: i, name: val.value[i] });
+                            _this.countries.push({ id: val.value[i], name: val.options[val.value[i]] });
                     }
                 }
                 _this.loader.dismiss();

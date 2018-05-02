@@ -28,10 +28,10 @@ export class SettingsProvider {
     let val = this.settings.countries;
     if(val.value.length == 0){
       for(let i in val.options)
-        countries.push({id: i, name: val.options[i]});
+        countries.push({id: val.options[i], name: val.options[i]});
     }else{
       for(let i in val.value)
-        countries.push({id: i, name: val.value[i]});
+        countries.push({id: val.value[i], name: val.options[val.value[i]]});
     }
     return countries;
   }

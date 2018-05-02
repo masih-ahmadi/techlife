@@ -57,10 +57,10 @@ export class AddAddressPage {
         if(val) {
           if(val.value.length == 0){
             for(let i in val.options)
-              this.countries.push({id: i, name: val.options[i]});
+              this.countries.push({id: val.options[i], name: val.options[i]});
           }else{
             for(let i in val.value)
-              this.countries.push({id: i, name: val.value[i]});
+              this.countries.push({id: val.value[i], name: val.options[val.value[i]]});
           }
         }
         this.loader.dismiss();

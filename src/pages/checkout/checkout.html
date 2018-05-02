@@ -67,17 +67,16 @@
           <ion-note>{{ 'SHIPPING_METHOD_DESC' | translate}}</ion-note>
         </div>
       </ion-list>
-      <ion-list radio-group no-margin margin-vertical (ionChange)="setShipping($event)">
-        <ng-container *ngFor="let x of shipping_method">
-          <ion-item mode="ios" *ngIf="x.enabled">
-            <ion-label>{{x.title}} <span *ngIf="x.settings.cost">({{x.settings.cost.value | money}})</span></ion-label>
-            <ion-radio mode="ios" [value]="x | json"></ion-radio>
+      <ion-list radio-group no-margin margin-vertical (ionChange)="setShipping()">
+        <ng-container >
+          <ion-item mode="ios" >
+            <ion-label>Table Rate Shipping <span class="dirs">({{cart.shippingvalue | money}})</span></ion-label>
+            <ion-radio mode="ios" value="{{cart.shippingvalue | money}}"></ion-radio>
           </ion-item>
         </ng-container>
       </ion-list>
-
       <div padding>
-        <button ion-button block icon-start tappable (click)="next()" [disabled]="shipping_lines.length == 0">
+        <button ion-button block icon-start tappable  (click)="next()"  [disabled]="shipping_lines.length == 0">
             {{ 'NEXT' | translate}}
         </button>
       </div>
@@ -101,6 +100,19 @@
           </ion-item>
           <ion-list class="accord" no-lines padding no-margin *ngIf="x.open && x.description" [ngClass]="{'section-active': x.open, 'section': !x.open}">
               <ion-item [innerHTML]="x.description" no-padding></ion-item>
+              <ion-grid *ngIf="x.id == 'bacs'">
+                <br>
+                <h3>{{ 'BANKDETAIL' | translate}}: </h3>
+                <ion-row>
+                  <ion-col>{{ 'BANK' | translate}}: Alrajhi Bank | مصرف الراجحي</ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>{{ 'ACCOUNTNUMBER' | translate}}: 553608010498351</ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>{{ 'IBAN' | translate}}: SA37 8000 0553 6080 1049 8351</ion-col>
+                </ion-row>
+              </ion-grid>
               <ion-grid class="stripe-form" *ngIf="x.id == 'stripe'">
                 <ion-row>
                   <ion-col>
@@ -162,15 +174,15 @@
 
       <ion-list no-margin margin-top class="total">
         <ion-item>
-          {{ 'SUBTOTAL' | translate}} ({{cart.totalQtyDetail}} items)
+          {{ 'SUBTOTAL' | translate}} ({{cart.totalQtyDetail}} {{'ITEM' | translate}})
           <span item-end>{{cart.total | money}}</span>
         </ion-item>
         <ion-item *ngIf="shipping_lines[0]">
           {{ 'SHIPPING' | translate}} ({{shipping_lines[0].method_title}}) 
-          <span item-end>{{shipping_lines[0].total | money}}</span>
+          <span item-end>{{shipping_lines[0].total | money}} {{shippingvalue | money}}</span>
         </ion-item>
         <ion-item>
-          Total <span item-end>{{total | money}}</span>
+          {{'TOTAL' | translate}} <span item-end>{{total | money}}</span>
         </ion-item>
       </ion-list>
 

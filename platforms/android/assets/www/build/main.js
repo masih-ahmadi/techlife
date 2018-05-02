@@ -6,8 +6,8 @@ webpackJsonp([27],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return App; });
 var App = {
-    store: 'Ajwadates',
-    ContactEmail: 'mahmadi@techlife.af',
+    store: 'TechLife',
+    ContactEmail: 'info@ajwadates.sa',
     url: 'http://www.ajwadates.sa/',
     OneSignalAppID: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
     GCM: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
@@ -17,10 +17,10 @@ var App = {
     paypalLiveClientID: '',
     paypalState: '',
     languages: [
+        { id: 'ar', title: 'العربية' },
         { id: 'en', title: 'English' },
-        { id: 'ar', title: 'Arabic' },
     ],
-    defaultLang: 'en'
+    defaultLang: 'ar'
 };
 //# sourceMappingURL=app.global.js.map
 
@@ -163,7 +163,7 @@ var DIRECTIVES = [
 
 var map = {
 	"../pages/account/account.module": [
-		902,
+		899,
 		26
 	],
 	"../pages/account/chats/chats.module": [
@@ -175,15 +175,15 @@ var map = {
 		24
 	],
 	"../pages/account/help/help.module": [
-		899,
+		902,
 		23
 	],
 	"../pages/account/notification/notification.module": [
-		906,
+		903,
 		22
 	],
 	"../pages/account/profile/profile.module": [
-		903,
+		904,
 		21
 	],
 	"../pages/account/saved-address/add-address/add-address.module": [
@@ -191,15 +191,15 @@ var map = {
 		20
 	],
 	"../pages/account/saved-address/saved-address.module": [
-		904,
+		906,
 		19
 	],
 	"../pages/account/settings/languages/languages.module": [
-		908,
+		907,
 		18
 	],
 	"../pages/account/settings/notifications/notifications.module": [
-		911,
+		908,
 		17
 	],
 	"../pages/account/settings/settings.module": [
@@ -207,11 +207,11 @@ var map = {
 		16
 	],
 	"../pages/account/settings/tos/tos.module": [
-		907,
+		910,
 		15
 	],
 	"../pages/cart/cart.module": [
-		910,
+		911,
 		14
 	],
 	"../pages/categories/categories.module": [
@@ -219,19 +219,19 @@ var map = {
 		13
 	],
 	"../pages/checkout/checkout.module": [
-		914,
+		913,
 		12
 	],
 	"../pages/home/home.module": [
-		915,
+		914,
 		11
 	],
 	"../pages/login/login.module": [
-		916,
+		915,
 		10
 	],
 	"../pages/orders/detail/detail.module": [
-		913,
+		916,
 		9
 	],
 	"../pages/orders/orders.module": [
@@ -239,7 +239,7 @@ var map = {
 		8
 	],
 	"../pages/product/grid/grid.module": [
-		920,
+		918,
 		7
 	],
 	"../pages/product/mini-cart/mini-cart.module": [
@@ -247,11 +247,11 @@ var map = {
 		6
 	],
 	"../pages/product/modal-categories/modal-categories.module": [
-		918,
+		920,
 		5
 	],
 	"../pages/product/product.module": [
-		923,
+		921,
 		4
 	],
 	"../pages/search/search.module": [
@@ -259,11 +259,11 @@ var map = {
 		3
 	],
 	"../pages/tabs/tabs.module": [
-		924,
+		923,
 		2
 	],
 	"../pages/thanks/thanks.module": [
-		921,
+		924,
 		1
 	],
 	"../pages/wishlist/wishlist.module": [
@@ -392,32 +392,32 @@ AppModule = __decorate([
                 backButtonText: ''
             }, {
                 links: [
-                    { loadChildren: '../pages/account/help/help.module#AccountHelpPageModule', name: 'AccountHelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/account.module#AccountPageModule', name: 'AccountPage', segment: 'account', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/chats/chats.module#AccountChatsPageModule', name: 'AccountChatsPage', segment: 'chats', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/chats/message/message.module#AccountChatsMessagePageModule', name: 'AccountChatsMessagePage', segment: 'message', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/account.module#AccountPageModule', name: 'AccountPage', segment: 'account', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/profile/profile.module#AccountProfilePageModule', name: 'AccountProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/saved-address/saved-address.module#SavedAddressPageModule', name: 'SavedAddressPage', segment: 'saved-address', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/saved-address/add-address/add-address.module#AddAddressPageModule', name: 'AddAddressPage', segment: 'add-address', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/help/help.module#AccountHelpPageModule', name: 'AccountHelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/notification/notification.module#AccountNotificationPageModule', name: 'AccountNotificationPage', segment: 'notification', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/settings/tos/tos.module#AccountSettingsTosPageModule', name: 'AccountSettingsTosPage', segment: 'tos', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/profile/profile.module#AccountProfilePageModule', name: 'AccountProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/saved-address/add-address/add-address.module#AddAddressPageModule', name: 'AddAddressPage', segment: 'add-address', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/saved-address/saved-address.module#SavedAddressPageModule', name: 'SavedAddressPage', segment: 'saved-address', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/settings/languages/languages.module#AccountSettingsLanguagesPageModule', name: 'AccountSettingsLanguagesPage', segment: 'languages', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/account/settings/settings.module#AccountSettingsPageModule', name: 'AccountSettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/account/settings/notifications/notifications.module#AccountSettingsNotificationsPageModule', name: 'AccountSettingsNotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/settings/settings.module#AccountSettingsPageModule', name: 'AccountSettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/account/settings/tos/tos.module#AccountSettingsTosPageModule', name: 'AccountSettingsTosPage', segment: 'tos', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/categories/categories.module#CategoriesPageModule', name: 'CategoriesPage', segment: 'categories', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/orders/detail/detail.module#OrderDetailPageModule', name: 'OrderDetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/checkout/checkout.module#CheckoutPageModule', name: 'CheckoutPage', segment: 'checkout', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/orders/detail/detail.module#OrderDetailPageModule', name: 'OrderDetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/orders/orders.module#OrdersPageModule', name: 'OrdersPage', segment: 'orders', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/product/modal-categories/modal-categories.module#ModalCategoriesPageModule', name: 'ModalCategoriesPage', segment: 'modal-categories', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/product/mini-cart/mini-cart.module#MiniCartPageModule', name: 'MiniCartPage', segment: 'mini-cart', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/product/grid/grid.module#ProductGridPageModule', name: 'ProductGridPage', segment: 'grid', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/thanks/thanks.module#ThanksPageModule', name: 'ThanksPage', segment: 'thanks', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/product/mini-cart/mini-cart.module#MiniCartPageModule', name: 'MiniCartPage', segment: 'mini-cart', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/product/modal-categories/modal-categories.module#ModalCategoriesPageModule', name: 'ModalCategoriesPage', segment: 'modal-categories', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/product/product.module#ProductPageModule', name: 'ProductPage', segment: 'product', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/thanks/thanks.module#ThanksPageModule', name: 'ThanksPage', segment: 'thanks', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/wishlist/wishlist.module#WishlistPageModule', name: 'WishlistPage', segment: 'wishlist', priority: 'low', defaultHistory: [] }
                 ]
             })
@@ -996,6 +996,7 @@ var CartProvider = (function () {
             images: product.images,
             id: product.id,
             price: product.price,
+            weight: product.weight,
             regular_price: product.regular_price,
             on_sale: product.on_sale,
             in_stock: product.in_stock,
@@ -1035,6 +1036,137 @@ var CartProvider = (function () {
             for (var i in this.cart)
                 qty += this.cart[i].quantity;
             return qty;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CartProvider.prototype, "totalweight", {
+        get: function () {
+            var tweight = 0;
+            for (var i in this.cart)
+                tweight += this.cart[i].weight * this.cart[i].quantity;
+            return tweight;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CartProvider.prototype, "shippingvalue", {
+        get: function () {
+            var tw, fprice;
+            tw = this.totalweight;
+            if (tw >= 0.25 && tw <= 15) {
+                fprice = 33;
+            }
+            else if (tw >= 15.25 && tw <= 16) {
+                fprice = 34;
+            }
+            else if (tw >= 16.25 && tw <= 17) {
+                fprice = 35;
+            }
+            else if (tw >= 17.25 && tw <= 18) {
+                fprice = 36;
+            }
+            else if (tw >= 18.25 && tw <= 19) {
+                fprice = 37;
+            }
+            else if (tw >= 19.25 && tw <= 20) {
+                fprice = 38;
+            }
+            else if (tw >= 20.25 && tw <= 21) {
+                fprice = 39;
+            }
+            else if (tw >= 21.25 && tw <= 22) {
+                fprice = 40;
+            }
+            else if (tw >= 22.25 && tw <= 23) {
+                fprice = 41;
+            }
+            else if (tw >= 23.25 && tw <= 24) {
+                fprice = 42;
+            }
+            else if (tw >= 24.25 && tw <= 25) {
+                fprice = 43;
+            }
+            else if (tw >= 25.25 && tw <= 26) {
+                fprice = 44;
+            }
+            else if (tw >= 26.25 && tw <= 27) {
+                fprice = 45;
+            }
+            else if (tw >= 27.25 && tw <= 28) {
+                fprice = 46;
+            }
+            else if (tw >= 28.25 && tw <= 29) {
+                fprice = 47;
+            }
+            else if (tw >= 29.25 && tw <= 30) {
+                fprice = 48;
+            }
+            else if (tw >= 30.25 && tw <= 31) {
+                fprice = 49;
+            }
+            else if (tw >= 31.25 && tw <= 32) {
+                fprice = 50;
+            }
+            else if (tw >= 32.25 && tw <= 33) {
+                fprice = 51;
+            }
+            else if (tw >= 33.25 && tw <= 34) {
+                fprice = 52;
+            }
+            else if (tw >= 34.25 && tw <= 35) {
+                fprice = 53;
+            }
+            else if (tw >= 35.25 && tw <= 36) {
+                fprice = 54;
+            }
+            else if (tw >= 36.25 && tw <= 37) {
+                fprice = 55;
+            }
+            else if (tw >= 37.25 && tw <= 38) {
+                fprice = 56;
+            }
+            else if (tw >= 38.25 && tw <= 39) {
+                fprice = 57;
+            }
+            else if (tw >= 39.25 && tw <= 40) {
+                fprice = 58;
+            }
+            else if (tw >= 40.25 && tw <= 41) {
+                fprice = 59;
+            }
+            else if (tw >= 41.25 && tw <= 42) {
+                fprice = 60;
+            }
+            else if (tw >= 42.25 && tw <= 43) {
+                fprice = 61;
+            }
+            else if (tw >= 43.25 && tw <= 44) {
+                fprice = 62;
+            }
+            else if (tw >= 44.25 && tw <= 45) {
+                fprice = 63;
+            }
+            else if (tw >= 45.25 && tw <= 46) {
+                fprice = 64;
+            }
+            else if (tw >= 46.25 && tw <= 47) {
+                fprice = 65;
+            }
+            else if (tw >= 47.25 && tw <= 48) {
+                fprice = 66;
+            }
+            else if (tw >= 48.25 && tw <= 49) {
+                fprice = 67;
+            }
+            else if (tw >= 49.25 && tw <= 50) {
+                fprice = 68;
+            }
+            else if (tw >= 50.25 && tw <= 51) {
+                fprice = 69;
+            }
+            ;
+            return fprice;
         },
         enumerable: true,
         configurable: true
@@ -1489,11 +1621,11 @@ var SettingsProvider = (function () {
         var val = this.settings.countries;
         if (val.value.length == 0) {
             for (var i in val.options)
-                countries.push({ id: i, name: val.options[i] });
+                countries.push({ id: val.options[i], name: val.options[i] });
         }
         else {
             for (var i in val.value)
-                countries.push({ id: i, name: val.value[i] });
+                countries.push({ id: val.value[i], name: val.options[val.value[i]] });
         }
         return countries;
     };

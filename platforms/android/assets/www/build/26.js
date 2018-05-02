@@ -1,6 +1,6 @@
 webpackJsonp([26],{
 
-/***/ 902:
+/***/ 899:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountPageModule", function() { return AccountPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__account__ = __webpack_require__(929);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__account__ = __webpack_require__(926);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_shared_module__ = __webpack_require__(526);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -41,7 +41,7 @@ AccountPageModule = __decorate([
 
 /***/ }),
 
-/***/ 929:
+/***/ 926:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -163,7 +163,7 @@ var AccountPage = (function () {
 }());
 AccountPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-account',template:/*ion-inline-start:"C:\Users\admin\Desktop\stor\src\pages\account\account.html"*/'<ion-content padding-top>\n	<ion-list no-padding padding-left no-lines margin-bottom margin-top>\n		<ion-item no-padding (click)="goProfile()" *ngIf="_user.all">\n			<h1>{{_user.displayname ? _user.displayname : (_user.firstname+\' \'+_user.lastname)}}</h1>\n			<p>{{ \'VIEW_EDIT_PROFILE\' | translate}}</p>\n			<ion-avatar item-end>\n				<img src="assets/img/miscellaneous/user.png">\n			</ion-avatar>\n		</ion-item>\n		<ion-item no-padding (click)="login()" *ngIf="!_user.all">\n			<h1>{{ \'LOGIN/REGISTER\' | translate}}</h1>\n			<p>{{ \'LOGIN_DESC\' | translate}}</p>\n			<ion-avatar item-end>\n				<img src="assets/img/miscellaneous/user.png">\n			</ion-avatar>\n		</ion-item>\n	</ion-list>\n	<ion-list class="account-list">\n		<!-- <ion-item mode="ios" tappable (click)="goTo(\'AccountChatsPage\')">\n			Chats\n			<ion-badge>3</ion-badge>\n			<ion-icon name="fa-paypal" item-end></ion-icon>\n		</ion-item> -->\n		<button ion-item tappable (click)="goTo(\'AccountNotificationPage\')">\n			{{ \'NOTIFICATIONS\' | translate}}\n			<ion-badge item-end *ngIf="_notif.all.length > 0">{{_notif.all.length}}</ion-badge>\n		</button>\n\n		<button ion-item tappable (click)="goTo(\'SavedAddressPage\')">\n			{{ \'SAVED_ADDRESS\' | translate}}\n			<ion-badge item-end *ngIf="_address.all.length > 0">{{_address.all.length}}</ion-badge>\n		</button>\n\n		<button ion-item tappable (click)="goTo(\'AccountSettingsPage\')">\n			{{ \'SETTINGS\' | translate}}\n		</button>\n\n		<button ion-item tappable (click)="goTo(\'AccountHelpPage\')">\n			{{ \'FAQ\' | translate}}\n		</button>\n\n		<button ion-item tappable (click)="emailUs()">\n			{{ \'CONTACT\' | translate}}\n		</button>\n\n		<button ion-item tappable (click)="rateUs()">\n			{{ \'GIVE_FEEDBACK\' | translate}}\n		</button>\n\n	</ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\admin\Desktop\stor\src\pages\account\account.html"*/,
+        selector: 'page-account',template:/*ion-inline-start:"C:\Users\admin\Desktop\stor\src\pages\account\account.html"*/'<ion-content padding-top>\n	<ion-list no-padding padding-left no-lines margin-bottom margin-top>\n		<ion-item no-padding *ngIf="_user.all">\n			<h1 style="padding-right: 0px">{{_user.displayname ? _user.displayname : (_user.firstname+\' \'+_user.lastname)}}</h1>\n			<p>{{ \'VIEW_EDIT_PROFILE\' | translate}}</p>\n			<ion-avatar item-end>\n				<img src="assets/img/miscellaneous/user.png">\n			</ion-avatar>\n		</ion-item>\n		<ion-item no-padding (click)="login()" *ngIf="!_user.all">\n			<h1 style="padding-right: 0px">{{ \'LOGIN/REGISTER\' | translate}}</h1>\n			<p>{{ \'LOGIN_DESC\' | translate}}</p>\n			<ion-avatar item-end>\n				<img src="assets/img/miscellaneous/user.png">\n			</ion-avatar>\n		</ion-item>\n	</ion-list>\n	<ion-list class="account-list">\n		<!-- <ion-item mode="ios" tappable (click)="goTo(\'AccountChatsPage\')">\n			Chats\n			<ion-badge>3</ion-badge>\n			<ion-icon name="fa-paypal" item-end></ion-icon>\n		</ion-item> -->\n		<button ion-item tappable (click)="goTo(\'AccountNotificationPage\')">\n			{{ \'NOTIFICATIONS\' | translate}}\n			<ion-badge item-end *ngIf="_notif.all.length > 0">{{_notif.all.length}}</ion-badge>\n		</button>\n\n		<button ion-item tappable (click)="goTo(\'SavedAddressPage\')">\n			{{ \'SAVED_ADDRESS\' | translate}}\n			<ion-badge item-end *ngIf="_address.all.length > 0">{{_address.all.length}}</ion-badge>\n		</button>\n\n		<button ion-item tappable (click)="goTo(\'AccountSettingsPage\')">\n			{{ \'SETTINGS\' | translate}}\n		</button>\n\n		<button ion-item tappable (click)="goTo(\'AccountHelpPage\')">\n			{{ \'FAQ\' | translate}}\n		</button>\n\n		<button ion-item tappable (click)="emailUs()">\n			{{ \'CONTACT\' | translate}}\n		</button>\n\n		<button ion-item tappable (click)="rateUs()">\n			{{ \'GIVE_FEEDBACK\' | translate}}\n		</button>\n\n	</ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\admin\Desktop\stor\src\pages\account\account.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_email_composer__["a" /* EmailComposer */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_app_version__["a" /* AppVersion */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_app_rate__["a" /* AppRate */], __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["w" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__providers_providers__["e" /* NotifProvider */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["t" /* NavController */], __WEBPACK_IMPORTED_MODULE_5__providers_providers__["a" /* AddressProvider */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["s" /* ModalController */], __WEBPACK_IMPORTED_MODULE_5__providers_providers__["i" /* UserProvider */], __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["u" /* NavParams */]])
 ], AccountPage);

@@ -1,14 +1,14 @@
 <ion-content padding-top>
 	<ion-list no-padding padding-left no-lines margin-bottom margin-top>
-		<ion-item no-padding (click)="goProfile()" *ngIf="_user.all">
-			<h1>{{_user.displayname ? _user.displayname : (_user.firstname+' '+_user.lastname)}}</h1>
+		<ion-item no-padding *ngIf="_user.all">
+			<h1 style="padding-right: 0px">{{_user.displayname ? _user.displayname : (_user.firstname+' '+_user.lastname)}}</h1>
 			<p>{{ 'VIEW_EDIT_PROFILE' | translate}}</p>
 			<ion-avatar item-end>
 				<img src="assets/img/miscellaneous/user.png">
 			</ion-avatar>
 		</ion-item>
 		<ion-item no-padding (click)="login()" *ngIf="!_user.all">
-			<h1>{{ 'LOGIN/REGISTER' | translate}}</h1>
+			<h1 style="padding-right: 0px">{{ 'LOGIN/REGISTER' | translate}}</h1>
 			<p>{{ 'LOGIN_DESC' | translate}}</p>
 			<ion-avatar item-end>
 				<img src="assets/img/miscellaneous/user.png">

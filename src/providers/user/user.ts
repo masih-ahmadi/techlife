@@ -59,10 +59,8 @@ export class UserProvider {
     let f = data.first ? '&first_name='+data.first : '';
     let l = data.last ? '&last_name='+data.last : '';
     let b = data.bio ? '&description='+data.bio : '';
-
     let seq = this.http.get(App.url+'/user/update_user_meta_vars/?insecure=cool&cookie='+cookie+f+l+b);
     seq.map((res:Response) => res.json());
-
     return seq;
   }
 

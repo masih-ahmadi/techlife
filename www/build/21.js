@@ -84,13 +84,14 @@ var AccountProfilePage = (function () {
     }
     AccountProfilePage.prototype.submit = function () {
         var _this = this;
-        this.loader.present();
+        // this.loader.present();
         this._user.update(this.form.value).map(function (x) { return x.json(); }).subscribe(function (x) {
+            alert(JSON.stringify(x));
             _this._user.setUserUpdate(_this.form.value);
             _this.translate.get(['PROFILE_UPDATED']).subscribe(function (x) {
                 _this.toast.show(x.PROFILE_UPDATED);
             });
-            _this.loader.dismiss();
+            // this.loader.dismiss();
             _this.dismiss();
         });
     };

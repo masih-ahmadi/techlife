@@ -154,3 +154,37 @@ $badge-wp-background-color: color($colors, secondary);
 
 $fa-font-path: $font-path;
 @import "font-awesome";
+
+.dirs {
+  
+
+    @include ltr() {
+        // Custom ltr style goes here
+     
+    }
+
+    @include rtl() {
+        // Custom rtl style goes here
+        float: right;
+    }
+}
+
+ion-label{
+   @include rtl() {
+        // Custom rtl style goes here
+        padding-right:22px;
+    }
+}
+h1{
+   @include rtl() {
+        // Custom rtl style goes here
+        padding-right:22px;
+    }
+}
+
+.searchbar-input-container{
+  @include rtl() {
+        // Custom rtl style goes here
+       direction: ltr;
+    }
+}

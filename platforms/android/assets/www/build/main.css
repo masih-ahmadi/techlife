@@ -6933,6 +6933,22 @@ ion-icon::before {
   clip: auto;
 }
 
+[dir="rtl"] .dirs {
+  float: right;
+}
+
+[dir="rtl"] ion-label {
+  padding-right: 22px;
+}
+
+[dir="rtl"] h1 {
+  padding-right: 22px;
+}
+
+[dir="rtl"] .searchbar-input-container {
+  direction: ltr;
+}
+
 ion-action-sheet {
   top: 0;
   position: absolute;

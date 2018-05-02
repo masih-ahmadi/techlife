@@ -56,7 +56,6 @@ export class CheckoutPage {
     });
 
     this.cart = this._cart;
-
     if(this.setting.all.zones.length <= 0){
       this.loader.present();
       this.woo.loadZones();  
@@ -78,6 +77,8 @@ export class CheckoutPage {
   ionViewDidEnter(){
     this.setOrder();
   }
+ 
+
 
   setOrder(){
 
@@ -94,7 +95,7 @@ export class CheckoutPage {
 
     //let tmp = (this.settings.value == 'shipping') ? this.shipping : this.billing;
 
-    if(this.shipping){
+    if(this.shipping){   
       let id = this.woo.getSingleZone(this.setting.all.zones, this.shipping);
       if(id){
         this.loader.present();
@@ -121,15 +122,14 @@ export class CheckoutPage {
     this.modal.create('MiniCartPage', {isCheckout: true}, { cssClass: 'inset-modal' }).present();
   }
 
-  setShipping(param){
+  setShipping(){
     this.shipping_lines = [];
-    let e = JSON.parse(param);
+    // let e = JSON.parse(param);
     this.shipping_lines.push({
-      method_id: e.method_id,
-      method_title: e.title,
-      total: (e.settings.cost ? e.settings.cost.value : 0)
+      method_id: 34,
+      method_title: 'Table Rate Shipping',
+      total: this.cart.shippingvalue.toString()
     });
-
     this.total = this.cart.total + parseInt(this.shipping_lines[0].total);
   }
 
@@ -186,6 +186,7 @@ export class CheckoutPage {
   confirm(){
     this.loader.present();
     this.order.billing = this.billing;
+
     this.order.shipping = this.shipping;
     this.order.line_items = this.cart.lineItems;
     this.order.shipping_lines = this.shipping_lines;

@@ -15,16 +15,20 @@ export class HomePage {
 	App: any;
 	categories: any[] = new Array;
 	data: any[] = new Array();
+	products: any[] = new Array();
 	app: any;
+	pspinner: any;
 
 	constructor(public nav: NavController, statusBar: StatusBar, private translate: TranslateService, private toast: ToastProvider, public wishlist: WishlistProvider, public loader: LoadingProvider, public modalCtrl: ModalController, private woo: WooCommerceProvider) {
-		// this.loader.present();
+		
 		this.App = App;
-
+	    this.pspinner = true;
+		this.loader.present();
 		this.woo.getAllCategories().then( (tmp) => {
 			this.categories = tmp;
-
+              
 			this.woo.loadSetting().then( x=> {
+				
 				if(x.currency){
 					this.app = x;
 					for(let i in tmp){
@@ -34,10 +38,15 @@ export class HomePage {
 							})
 						}
 					}
-					// this.loader.dismiss();
+					this.loader.dismiss();
 				}		
 			});
 		});
+		this.woo.getAllProducts(null, null, null, null, null, 9, null, null).then( (val) => {
+								this.products.push(val);
+								this.pspinner = false;
+
+		})
 	}
 
 	setFav(product: any){
